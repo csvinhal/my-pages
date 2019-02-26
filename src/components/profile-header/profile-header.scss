@@ -2,22 +2,29 @@
     background-color: white;
     box-shadow: 1px 1px 7px 3px #bfbfbf;
     display: flex;
+    flex-wrap: wrap;
     justify-content: left;
-    >.profile-image {
+    >.profile-header__image {
         border-radius: 50%;
         width: 5rem;
         height: 5rem;
         margin: 1rem;
     }
-    >.profile-title {
+    >.profile-header__title {
         margin: auto;
-        >.profile-title__name {
+        min-width: 14rem;
+        >.profile-header__title--name {
             font-weight: bold;
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
-        >.profile-title__job {
+        >.profile-header__title--job {
             color: #DCDCDC;
             font-size: 0.9rem;
+        }
+        >.profile-header__title--media {
+            >svg {
+                margin: .4rem;
+            }
         }
     }
 }
