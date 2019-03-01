@@ -8,7 +8,7 @@ const profileBody = () => {
                 About
             </div>
             <div className="profile-body__content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida aliquam purus, vitae rutrum leo tempus ac. Nam sagittis elit et turpis porttitor, a pellentesque tellus imperdiet. Nullam mattis eget nulla sit amet ornare. Donec tempor mauris non interdum fermentum. Ut luctus eu odio a ultrices. Sed fermentum mi eu eros porta, id commodo libero tincidunt. Ut mi orci, tincidunt vel risus non, lacinia porta leo. Praesent id nibh vel enim tempus viverra.
+                I'm a 26 years old software developer with 3 years of experience in systems  development and over 2 years in systems support and implantation. Also a quick learner, team player and dedicated professional. Always looking forward to further developing my skills and learning new ones.  Willing to work abroad and get to know new work environments in order  to get my skills enhanced and to become a more effective and qualified  professional.
             </div>
             <hr />
             <div className="profile-body__title">
@@ -38,6 +38,10 @@ const profileBody = () => {
             <hr />
             <div className="profile-body__title">
                 Work experience
+            </div>
+            <div className="profile-body__content">
+                <p><span className="profile-body__content--job">Software Developer, Senior Sistemas</span> - August/2017 - present - Blumenau, Santa Catarina</p>
+                <p>Senior is a Brazilian software house that provides reference high performance solutions in Enterprise Resource Planning, Logistics, Human Capital and Access Control and Security Management systems to several sizes and segments companies.</p>
             </div>
         </div>
     );
