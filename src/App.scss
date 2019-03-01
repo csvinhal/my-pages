@@ -1,7 +1,8 @@
+@import './assets/css/base.scss';
+
 body {
-    background-color: #f2f2f2;
-    font-weight: 300;
-    font-family: 'Roboto', 'Montserrat', sans-serif;
+    background-color: $secondary-color;
+    font: normal normal 300 1rem $font-stack;
 }
 
 .container {
