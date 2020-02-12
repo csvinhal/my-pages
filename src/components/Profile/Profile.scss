@@ -1,0 +1,60 @@
+@import "./../../assets/css/base.scss";
+
+.profile {
+  position: relative;
+  background-color: $primary-color;
+  margin-top: -194px;
+  height: 400px;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.profile__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 85%;
+  width: 150px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile__image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.profile__container {
+  padding: 10px;
+}
+
+.container__infos {
+  max-width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.container__infos--name {
+  position: relative;
+  display: block;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+
+.container__infos--job {
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+  text-transform: capitalize;
+}
+
+@media (min-width: 789px) {
+  .profile {
+    height: 400px;
+  }
+}

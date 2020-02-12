@@ -1,10 +1,36 @@
-@import './assets/css/base.scss';
+@import "./assets/css/base.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
-    background-color: $secondary-color;
-    font: normal normal 300 1rem $font-stack;
+  background-color: $secondary-color;
+  font: normal normal 300 1rem $font-stack;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 2.18rem;
+  line-height: 110%;
+  margin: 1.14rem 0 0.912rem 0;
+}
+
+h6 {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.4rem;
 }
 
 .container {
-    margin: 0.5rem;
+  margin: 1rem;
 }

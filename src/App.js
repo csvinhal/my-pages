@@ -1,18 +1,20 @@
-import React, { Component } from 'react';
-import './App.scss';
-import ProfileHeader from './components/profile-header/profile-header';
-import ProfileBody from './components/profile-body/profile-body';
+import React, { Component } from "react";
+import "./App.scss";
+import Profile from "./components/Profile/Profile";
+import Toolbar from "./components/Toolbar/Toolbar";
 
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <header>
-          <ProfileHeader />
+          <Toolbar />
         </header>
-        <main>
-          <ProfileBody />
-        </main>
+        <div className="container">
+          <main>
+            <Profile />
+          </main>
+        </div>
       </div>
     );
   }
