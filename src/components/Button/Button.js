@@ -2,17 +2,17 @@ import React from "react";
 import "./Button.scss";
 
 const Button = props => {
-  const { label, primary, disabled } = props;
-  let buttonClass = "button";
+  const { label, priority, disabled } = props;
+  let buttonClass = ["button"];
 
-  if (primary) {
-    buttonClass += " primary";
-  } else {
-    buttonClass += " secondary";
+  if (priority === "primary") {
+    buttonClass.push("primary");
+  } else if (priority === "secondary") {
+    buttonClass.push("secondary");
   }
 
   return (
-    <button className={buttonClass} type="button" disabled={disabled}>
+    <button className={buttonClass.join(" ")} type="button" disabled={disabled}>
       {label}
     </button>
   );

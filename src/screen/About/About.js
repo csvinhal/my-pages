@@ -20,7 +20,7 @@ const About = () => {
         </div>
 
         <div className="card-container__footer">
-          <Button label="Download resume" primary={true} />
+          <Button label="Download resume" priority={"primary"} />
         </div>
       </div>
     </div>
