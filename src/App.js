@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./App.scss";
-import Profile from "./components/Profile/Profile";
-import Toolbar from "./components/Toolbar/Toolbar";
+import About from "./screen/About/About";
+import Profile from "./screen/Profile/Profile";
+import Toolbar from "./screen/Toolbar/Toolbar";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <div className="container">
           <main>
             <Profile />
+            <About />
           </main>
         </div>
       </div>

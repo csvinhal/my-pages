@@ -1,4 +1,4 @@
-@import "./../../assets/css/base.scss";
+@import "./../../assets/scss/base.scss";
 
 .profile {
   position: relative;
@@ -7,15 +7,14 @@
   height: 400px;
   width: 100%;
   border: none;
-  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.16),
-    2px 2px 10px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: $box-shadow;
 }
 
 .profile__image {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 85%;
+  bottom: 80%;
   width: 150px;
   margin-left: auto;
   margin-right: auto;
@@ -25,8 +24,7 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.16),
-    2px 2px 10px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: $box-shadow;
 }
 
 .profile__container {
@@ -35,21 +33,19 @@
 
 .container__infos {
   max-width: 100%;
-  margin-top: 50px;
+  margin-top: 68px;
   text-align: center;
 }
 
 .container__infos--name {
   position: relative;
   display: block;
-  color: $font-color;
   font-size: 2.18rem;
   padding-top: 10px;
 }
 
 .container__infos--job {
   font-size: 1.56em;
-  color: $font-color;
   text-transform: capitalize;
   margin-top: 10px;
 }

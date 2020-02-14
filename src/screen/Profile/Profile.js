@@ -35,7 +35,7 @@ const Profile = () => {
       <div className="profile__container">
         <div className="container__infos">
           <h4 className="container__infos--name">Cristiano Vinhal</h4>
-          <h6 className="container__infos--job">UI Engineer</h6>
+          <h6 className="container__infos--job">UI Engineer & Coffe Addict</h6>
         </div>
         <div className="profile__contact">
           <div className="contact__mail">

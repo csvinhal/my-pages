@@ -1,0 +1,52 @@
+@import "../../assets/scss/base.scss";
+
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $btn-padding-y $btn-padding-x;
+
+  font-family: $btn-font-family;
+  font-size: $btn-font-size;
+  line-height: $btn-line-height;
+  white-space: $btn-white-space;
+  font-weight: $btn-font-weight;
+
+  border: $btn-border;
+  border-radius: $btn-border-radius;
+
+  box-shadow: $btn-box-shadow;
+  transition: $btn-transition;
+
+  &.primary {
+    background-color: $primary;
+    border: $btn-border-width solid $primary;
+    color: $white;
+
+    &:focus {
+      outline: 0;
+      background-color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
+      box-shadow: $btn-focus-box-shadow;
+    }
+    &:hover {
+      background-color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
+      text-decoration: none;
+    }
+    &:disabled {
+      opacity: $btn-disabled-opacity;
+      box-shadow: none;
+    }
+    &:not(:disabled):active {
+      background-color: darken($primary, 20%);
+      box-shadow: $btn-active-box-shadow;
+
+      &:focus {
+        outline: 0;
+        box-shadow: $btn-focus-box-shadow, $btn-active-box-shadow;
+      }
+    }
+  }
+}
