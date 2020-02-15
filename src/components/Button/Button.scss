@@ -19,10 +19,10 @@
   transition: $btn-transition;
 
   &.primary {
-    @include buttonVariation($white, $primary);
+    @include button-variation($white, $primary);
   }
 
   &.secondary {
-    @include buttonVariation($white, $secondary);
+    @include button-variation($white, $secondary);
   }
 }

@@ -22,6 +22,18 @@ $font-color: $gray-600;
 $primary: $blue-500 !default;
 $secondary: $gray-500 !default;
 
+// Brands Color
+
+$skype: #00aff0;
+$facebook: #3f51b5;
+$linkedin: #0073b1;
+$angular: #dd0031;
+$nodejs: #689f63;
+$reactjs: #61dafb;
+$redux: #764abc;
+$html5: #e44d26;
+$css3: #264de4;
+
 // Spacing
 
 $spacer: 1rem !default;
@@ -91,3 +103,10 @@ $btn-disabled-opacity: 0.65 !default;
 
 $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
   border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
+
+// Cards
+$card-box-shadow: $box-shadow;
+
+// Title
+$title-align: center !default;
+$title-font-size: 2.18em !default;

@@ -1,0 +1,44 @@
+@import "../../assets/scss/variables";
+
+.skill__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container__technology {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  min-width: 100px;
+  height: 100px;
+}
+
+.technology__svg {
+  width: 100%;
+  height: 50px;
+}
+
+.technology__label {
+  &--angular {
+    color: $angular;
+  }
+  &--reactjs {
+    color: $reactjs;
+  }
+  &--redux {
+    color: $redux;
+  }
+  &--nodejs {
+    color: $nodejs;
+  }
+  &--html5 {
+    color: $html5;
+  }
+  &--css3 {
+    color: $css3;
+  }
+}

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.scss";
 import About from "./screen/About/About";
 import Profile from "./screen/Profile/Profile";
+import Skill from "./screen/Skill/Skill";
 import Toolbar from "./screen/Toolbar/Toolbar";
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
           <main>
             <Profile />
             <About />
+            <Skill />
           </main>
         </div>
       </div>

@@ -1,33 +1,12 @@
-@import "./../../assets/scss/base.scss";
-
-.about__title {
-  text-align: center;
-
-  &-title {
-    font-size: 2.18em;
-  }
-}
-
-.about__card-container {
-  position: relative;
-  background-color: $white;
-  width: 100%;
-  border: none;
-  margin-top: 10px;
-  box-shadow: $box-shadow;
-}
+@import "./../../assets/scss/variables";
 
 .card-container__text {
   padding: 10px;
   text-align: justify;
 }
 
-.card-container__footer {
+.about__footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 55px;
-  margin-top: 10px;
-  border-top: $border;
 }

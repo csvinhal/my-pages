@@ -1,4 +1,4 @@
-@mixin buttonVariation($color, $background-color) {
+@mixin button-variation($color, $background-color) {
   background-color: $background-color;
   border: $btn-border-width solid $background-color;
   color: $color;

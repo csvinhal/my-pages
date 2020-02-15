@@ -1,0 +1,9 @@
+@import "../../assets/scss/variables";
+
+.title {
+  text-align: $title-align;
+}
+
+.title h4 {
+  font-size: $title-font-size;
+}
