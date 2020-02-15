@@ -9,12 +9,6 @@
 
 @include media-breakpoint-up(md) {
   .timeline {
-    margin: 10px 50px;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .timeline {
-    margin: 10px 160px;
+    margin: 10px 10px;
   }
 }

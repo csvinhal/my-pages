@@ -6,7 +6,6 @@
   justify-content: flex-start;
   position: relative;
   margin: 10px 0;
-  max-height: 265px;
 }
 
 .timeline-item__content {
@@ -35,9 +34,25 @@
   height: 100%;
   padding: 15px;
 
-  & .timeline-item__job-description {
-    max-height: 170px;
-    overflow: hidden;
+  & .timeline-item__title {
+    margin-top: 0;
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+
+  & .timeline-item__sub-title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  & .timeline-item__period {
+    font-size: 1rem;
+    padding-top: 5px;
+  }
+
+  & .timeline-item__description {
+    font-size: 0.875rem;
+    text-align: justify;
   }
 }
 
@@ -72,17 +87,17 @@
 @include media-breakpoint-up(md) {
   .timeline-item {
     align-self: flex-end;
-    max-width: 300px;
+    max-width: calc(50% - 20px);
 
     & .timeline-item__path {
       & .path__circle {
         right: auto;
-        left: -27px;
+        left: -22px;
       }
 
       & .path__line {
         right: auto;
-        left: -20px;
+        left: -15px;
       }
     }
   }
@@ -103,12 +118,12 @@
 
     & .timeline-item__path {
       & .path__circle {
-        right: -38px;
+        right: -33px;
         left: auto;
       }
 
       & .path__line {
-        right: -31px;
+        right: -26px;
         left: auto;
       }
     }
