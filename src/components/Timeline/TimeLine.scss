@@ -1,0 +1,17 @@
+@import "../../assets/scss/variables";
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 10px 0;
+}
+
+.timeline::after {
+  background-color: $primary;
+  content: "";
+  position: absolute;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 100%;
+}
