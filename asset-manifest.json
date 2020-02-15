@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/my-pages/static/css/main.062549ad.chunk.css",
-    "main.js": "/my-pages/static/js/main.0e9956c9.chunk.js",
-    "main.js.map": "/my-pages/static/js/main.0e9956c9.chunk.js.map",
+    "main.css": "/my-pages/static/css/main.b3a4b384.chunk.css",
+    "main.js": "/my-pages/static/js/main.f4c1d502.chunk.js",
+    "main.js.map": "/my-pages/static/js/main.f4c1d502.chunk.js.map",
     "runtime-main.js": "/my-pages/static/js/runtime-main.7a977c55.js",
     "runtime-main.js.map": "/my-pages/static/js/runtime-main.7a977c55.js.map",
-    "static/js/2.2089367e.chunk.js": "/my-pages/static/js/2.2089367e.chunk.js",
-    "static/js/2.2089367e.chunk.js.map": "/my-pages/static/js/2.2089367e.chunk.js.map",
+    "static/js/2.a5cc9453.chunk.js": "/my-pages/static/js/2.a5cc9453.chunk.js",
+    "static/js/2.a5cc9453.chunk.js.map": "/my-pages/static/js/2.a5cc9453.chunk.js.map",
     "index.html": "/my-pages/index.html",
-    "precache-manifest.14ce58d29fdc4468b2343c24c7ca2123.js": "/my-pages/precache-manifest.14ce58d29fdc4468b2343c24c7ca2123.js",
+    "precache-manifest.bbe77786377445265c24261db2ecb2a5.js": "/my-pages/precache-manifest.bbe77786377445265c24261db2ecb2a5.js",
     "service-worker.js": "/my-pages/service-worker.js",
-    "static/css/main.062549ad.chunk.css.map": "/my-pages/static/css/main.062549ad.chunk.css.map",
-    "static/js/2.2089367e.chunk.js.LICENSE.txt": "/my-pages/static/js/2.2089367e.chunk.js.LICENSE.txt",
+    "static/css/main.b3a4b384.chunk.css.map": "/my-pages/static/css/main.b3a4b384.chunk.css.map",
+    "static/js/2.a5cc9453.chunk.js.LICENSE.txt": "/my-pages/static/js/2.a5cc9453.chunk.js.LICENSE.txt",
+    "static/media/angular.5c69e565.svg": "/my-pages/static/media/angular.5c69e565.svg",
+    "static/media/css3.d3ad67fa.svg": "/my-pages/static/media/css3.d3ad67fa.svg",
+    "static/media/html5.525f317f.svg": "/my-pages/static/media/html5.525f317f.svg",
+    "static/media/nodejs.89ccb090.svg": "/my-pages/static/media/nodejs.89ccb090.svg",
     "static/media/profile.JPG": "/my-pages/static/media/profile.d283cad9.JPG",
+    "static/media/reactjs.84287d09.svg": "/my-pages/static/media/reactjs.84287d09.svg",
     "static/media/Toolbar.scss": "/my-pages/static/media/toolbar_background_small.fe327b8f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7a977c55.js",
-    "static/js/2.2089367e.chunk.js",
-    "static/css/main.062549ad.chunk.css",
-    "static/js/main.0e9956c9.chunk.js"
+    "static/js/2.a5cc9453.chunk.js",
+    "static/css/main.b3a4b384.chunk.css",
+    "static/js/main.f4c1d502.chunk.js"
   ]
 }
