@@ -1,9 +1,12 @@
 import React from "react";
 import { ReactComponent as AngularSVG } from "../../assets/images/skills/angular.svg";
 import { ReactComponent as CSS3SVG } from "../../assets/images/skills/css3.svg";
+import { ReactComponent as ES6SVG } from "../../assets/images/skills/es6.svg";
+import Git from "../../assets/images/skills/git.png";
 import { ReactComponent as HTML5SVG } from "../../assets/images/skills/html5.svg";
 import { ReactComponent as NodeJSSVG } from "../../assets/images/skills/nodejs.svg";
 import { ReactComponent as ReactJSSVG } from "../../assets/images/skills/reactjs.svg";
+import { ReactComponent as SASSSVG } from "../../assets/images/skills/sass.svg";
 import Card from "../../components/Card/Card";
 import CardContainer from "../../components/CardContainer/CardContainer";
 import Title from "../../components/Title/Title";
@@ -19,14 +22,18 @@ const Skill = () => {
             <div className="technology__svg">
               <AngularSVG width={50} height={50} />
             </div>
-            <div className="technology__label--angular">Angular</div>
+            <div className="technology__label technology__label--angular">
+              Angular
+            </div>
           </div>
 
           <div className="container__technology">
             <div className="technology__svg">
               <ReactJSSVG width={50} height={50} />
             </div>
-            <div className="technology__label--reactjs">ReactJS</div>
+            <div className="technology__label technology__label--reactjs">
+              ReactJS
+            </div>
           </div>
 
           <div className="container__technology">
@@ -44,28 +51,58 @@ const Skill = () => {
                 </g>
               </svg>
             </div>
-            <div className="technology__label--redux">Redux</div>
+            <div className="technology__label technology__label--redux">
+              Redux
+            </div>
           </div>
 
           <div className="container__technology">
             <div className="technology__svg">
               <NodeJSSVG width={50} height={50} />
             </div>
-            <div className="technology__label--nodejs">NodeJS</div>
+            <div className="technology__label technology__label--nodejs">
+              NodeJS
+            </div>
           </div>
 
           <div className="container__technology">
             <div className="technology__svg">
               <HTML5SVG width={50} height={50} />
             </div>
-            <div className="technology__label--html5">HTML5</div>
+            <div className="technology__label technology__label--html5">
+              HTML5
+            </div>
           </div>
 
           <div className="container__technology">
             <div className="technology__svg">
               <CSS3SVG width={50} height={50} />
             </div>
-            <div className="technology__label--css3">CSS3</div>
+            <div className="technology__label technology__label--css3">
+              CSS3
+            </div>
+          </div>
+          <div className="container__technology">
+            <div className="technology__svg">
+              <ES6SVG width={50} height={50} />
+            </div>
+            <div className="technology__label technology__label--es6">ES6</div>
+          </div>
+          <div className="container__technology">
+            <div className="technology__svg">
+              <SASSSVG width={50} height={50} />
+            </div>
+            <div className="technology__label technology__label--sass">
+              SASS
+            </div>
+          </div>
+          <div className="container__technology">
+            <div className="technology__img">
+              <img src={Git} alt="Git logo" />
+            </div>
+            <div className="technology__label technology__label--git">
+              Git
+            </div>
           </div>
         </CardContainer>
       </Card>
