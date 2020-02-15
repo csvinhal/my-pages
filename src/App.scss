@@ -35,11 +35,3 @@ body {
     margin-left: auto;
   }
 }
-
-@include media-breakpoint-up(xl) {
-  .container {
-    width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
