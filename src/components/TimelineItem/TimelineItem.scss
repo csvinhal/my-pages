@@ -1,19 +1,12 @@
-@import "../../assets/scss/variables";
+@import "../../assets/scss/base.scss";
 
 .timeline-item {
   display: flex;
-  justify-content: flex-end;
-  padding-right: 30px;
+  align-self: center;
+  justify-content: flex-start;
   position: relative;
   margin: 10px 0;
-  width: 50%;
-}
-
-.timeline-item:nth-child(odd) {
-  align-self: flex-end;
-  justify-content: flex-start;
-  padding-left: 30px;
-  padding-right: 0;
+  max-height: 265px;
 }
 
 .timeline-item__content {
@@ -29,38 +22,95 @@
 .timeline-item__content::after {
   position: absolute;
   top: 20px;
-  right: -7.5px;
+  left: -7.5px;
   content: " ";
   background-color: $white;
   width: 15px;
   height: 15px;
   transform: rotate(45deg);
-  box-shadow: 1px -1px 1px rgba($black, 0.2);
+  box-shadow: $timeline-left-arrow-shaddow;
 }
 
-.timeline-item:nth-child(odd) .timeline-item__content {
-  align-items: flex-start;
+.timeline-item__container {
+  height: 100%;
+  padding: 15px;
+
+  & .timeline-item__job-description {
+    max-height: 170px;
+    overflow: hidden;
+  }
 }
 
-.timeline-item:nth-child(odd) .timeline-item__content::after {
-  right: auto;
-  left: -7.5px;
-  box-shadow: -1px 1px 1px rgba($black, 0.2);
+.timeline-item__path {
+  & .path__circle {
+    position: absolute;
+    background-color: $white;
+    border: 1px solid $primary;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top: 23px;
+    left: -38px;
+  }
+  & .path__line {
+    position: absolute;
+    content: " ";
+    width: 1px;
+    height: 100%;
+    background-color: $primary;
+    top: 40px;
+    left: -31px;
+  }
 }
 
-.timeline-item__content .circle {
-  background-color: $white;
-  border: 3px solid $primary;
-  border-radius: 50%;
-  position: absolute;
-  top: 18px;
-  right: -40px;
-  width: 20px;
-  height: 20px;
-  z-index: 100;
+.timeline-item:last-child .timeline-item__path {
+  & .path__line {
+    height: 85%;
+  }
 }
 
-.timeline-item:nth-child(odd) .timeline-item__content .circle {
-  right: auto;
-  left: -40px;
+@include media-breakpoint-up(md) {
+  .timeline-item {
+    align-self: flex-end;
+    max-width: 300px;
+
+    & .timeline-item__path {
+      & .path__circle {
+        right: auto;
+        left: -27px;
+      }
+
+      & .path__line {
+        right: auto;
+        left: -20px;
+      }
+    }
+  }
+
+  .timeline-item:nth-child(odd) {
+    padding-left: 30px;
+  }
+
+  .timeline-item:nth-child(even) {
+    align-self: flex-start;
+    padding-right: 30px;
+
+    & .timeline-item__content::after {
+      right: -7.5px;
+      left: auto;
+      box-shadow: $timeline-right-arrow-shaddow;
+    }
+
+    & .timeline-item__path {
+      & .path__circle {
+        right: -38px;
+        left: auto;
+      }
+
+      & .path__line {
+        right: -31px;
+        left: auto;
+      }
+    }
+  }
 }

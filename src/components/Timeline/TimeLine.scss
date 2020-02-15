@@ -1,17 +1,26 @@
-@import "../../assets/scss/variables";
+@import "../../assets/scss/base.scss";
 
 .timeline {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 10px 0;
+  margin: 10px 0 10px 50px;
 }
 
-.timeline::after {
-  background-color: $primary;
-  content: "";
-  position: absolute;
-  left: calc(50% - 1px);
-  width: 2px;
-  height: 100%;
+@include media-breakpoint-up(md) {
+  .timeline {
+    margin: 10px 50px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .timeline {
+    margin: 10px 160px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .timeline {
+    margin: 10px 225px;
+  }
 }

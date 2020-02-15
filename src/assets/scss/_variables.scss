@@ -66,6 +66,8 @@ $grid-breakpoints: (
   xl: 1200px
 ) !default;
 
+$grid-breakpoint-lg: map-get($grid-breakpoints, "lg");
+
 // Typography
 
 $font-family-base: "Lato", sans-serif;
@@ -125,6 +127,10 @@ $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
 
 // Cards
 $card-box-shadow: $box-shadow;
+
+// Timeline
+$timeline-left-arrow-shaddow: -1px 1px 1px rgba($black, 0.2);
+$timeline-right-arrow-shaddow: 1px -1px 1px rgba($black, 0.2);
 
 // Title
 $title-align: center !default;

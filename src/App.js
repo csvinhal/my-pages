@@ -13,14 +13,12 @@ class App extends Component {
         <header>
           <Toolbar />
         </header>
-        <div className="container">
-          <main>
-            <Profile />
-            <About />
-            <Skill />
-            <Experience />
-          </main>
-        </div>
+        <main className="container">
+          <Profile />
+          <About />
+          <Skill />
+          <Experience />
+        </main>
       </div>
     );
   }

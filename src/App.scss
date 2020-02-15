@@ -19,3 +19,27 @@ body {
 .container {
   margin: 1rem;
 }
+
+@include media-breakpoint-up(md) {
+  .container {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .container {
+    width: 970px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .container {
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
