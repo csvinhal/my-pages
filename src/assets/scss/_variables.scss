@@ -17,6 +17,20 @@ $blue-600: #1767a7 !default;
 $blue-700: #125082 !default;
 $blue-900: #104570 !default;
 
+$topaz-500: #ffcb6e !default;
+
+$coral-500: #ff835d !default;
+
+$mulberry-500: #be5486 !default;
+
+$middle-blue-purple-100: #f4f2f8 !default;
+$middle-blue-purple-300: #d4cbe4 !default;
+$middle-blue-purple-400: #b4a5cf !default;
+$middle-blue-purple-500: #8a72b5 !default;
+$middle-blue-purple-600: #715e95 !default;
+$middle-blue-purple-700: #584974 !default;
+$middle-blue-purple-900: #3f3453 !default;
+
 $independence-100: #eef0f2 !default;
 $independence-300: #bec3cb !default;
 $independence-400: #8d96a5 !default;
@@ -129,8 +143,18 @@ $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
 $card-box-shadow: $box-shadow;
 
 // Timeline
+$timeline-box-shadow: $box-shadow;
 $timeline-left-arrow-shaddow: -1px 1px 1px rgba($black, 0.2);
 $timeline-right-arrow-shaddow: 1px -1px 1px rgba($black, 0.2);
+
+$timeline-colors: (
+  independence: $independence-500,
+  weldon: $weldon-blue-500,
+  purple: $middle-blue-purple-500,
+  mulberry: $mulberry-500,
+  coral: $coral-500,
+  topaz: $topaz-500
+) !default;
 
 // Title
 $title-align: center !default;
