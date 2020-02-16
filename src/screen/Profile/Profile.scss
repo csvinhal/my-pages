@@ -75,14 +75,20 @@
 }
 
 .profile__social-media {
-  margin-top: 60px;
+  margin-top: 55px;
   text-align: center;
 }
 
 .social-media__icon {
   display: inline;
   cursor: pointer;
+  font-size: 1.2rem;
   &:not(:first-of-type) {
     margin-left: 10px;
+  }
+
+  & svg:hover {
+    transform: scale(1.5);
+    transition: 300ms ease;
   }
 }
