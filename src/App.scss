@@ -35,3 +35,13 @@ body {
     margin-left: auto;
   }
 }
+
+// Animations
+.app-appear {
+  opacity: 0;
+}
+
+.app-appear.app-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms ease;
+}

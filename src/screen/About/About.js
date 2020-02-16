@@ -11,7 +11,7 @@ const About = () => {
     <div className="about">
       <Title title="About me" />
       <Card>
-        <CardContainer className="card-container__text">
+        <CardContainer className="about-container__text">
           <p>
             First and foremost, I love coding, creating and optimizing
             interactive, user-friendly websites/apps bringing a wonderful
