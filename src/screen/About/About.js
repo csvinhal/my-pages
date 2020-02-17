@@ -8,10 +8,10 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <div className="about">
-      <Title title="About me" />
+    <section className="about" aria-labelledby="about__title">
+      <Title id="about__title" title="About me" />
       <Card>
-        <CardContainer className="about-container__text">
+        <CardContainer className="about-container__text" tabIndex="0">
           <p>
             First and foremost, I love coding, creating and optimizing
             interactive, user-friendly websites/apps bringing a wonderful
@@ -28,7 +28,7 @@ const About = () => {
           <Button label="Download resume" priority={"primary"} />
         </CardFooter>
       </Card>
-    </div>
+    </section>
   );
 };
 

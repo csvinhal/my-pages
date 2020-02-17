@@ -6,8 +6,8 @@ import "./Experience.scss";
 
 const Experience = () => {
   return (
-    <div className="experience">
-      <Title title="Experience" />
+    <section className="experience" aria-labelledby="expecience__title">
+      <Title id="expecience__title" title="Experience" />
       <Timeline>
         <TimelineItem
           color="independence"
@@ -56,7 +56,7 @@ const Experience = () => {
             `.trim()}
         />
       </Timeline>
-    </div>
+    </section>
   );
 };
 

@@ -28,25 +28,33 @@ const Profile = () => {
   };
 
   return (
-    <div className="profile">
+    <section className="profile" aria-label="Informações pessoais">
       <div className="profile__image">
-        <img src={profile} alt="Imagem de perfil" />
+        <img src={profile} title="Cristiano Vinhal" alt="Imagem de perfil" />
       </div>
       <div className="profile__container">
         <div className="container__infos">
-          <h4 className="container__infos--name">Cristiano Vinhal</h4>
-          <h6 className="container__infos--job">UI Engineer & Coffe Addict</h6>
+          <h4
+            id="container__infos--name"
+            className="container__infos--name"
+            tabIndex="0"
+          >
+            Cristiano Vinhal
+          </h4>
+          <h6 className="container__infos--job" tabIndex="0">
+            UI Engineer & Coffe Addict
+          </h6>
         </div>
-        <div className="profile__contact">
-          <div className="contact__mail">
+        <address className="profile__contact">
+          <div className="contact__mail" tabIndex="0">
             <FontAwesomeIcon icon={faEnvelope} size="lg" color="#D93025" />
             <span>cristiano.vinhal10@gmail.com</span>
           </div>
-          <div className="contact__skype">
+          <div className="contact__skype" tabIndex="0">
             <FontAwesomeIcon icon={faSkype} size="lg" color="#00AFF0" />
             <span>cristiano.vinhal</span>
           </div>
-          <div className="contact__phone">
+          <div className="contact__phone" tabIndex="0">
             <FontAwesomeIcon
               icon={faPhoneSquareAlt}
               size="lg"
@@ -54,14 +62,18 @@ const Profile = () => {
             />
             <span>+55 47 99212-8702</span>
           </div>
-          <div className="contact__place">
+          <div className="contact__place" tabIndex="0">
             <FontAwesomeIcon icon={faMapMarkerAlt} size="lg" color="#D93025" />
             <span>Blumenau-SC/Brasil</span>
           </div>
-        </div>
+        </address>
 
         <div className="profile__social-media">
-          <div className="social-media__icon">
+          <div
+            className="social-media__icon"
+            aria-label="Clique para abrir minha página do Facebook"
+            tabIndex="0"
+          >
             <FontAwesomeIcon
               icon={faFacebook}
               size="lg"
@@ -69,10 +81,18 @@ const Profile = () => {
               onClick={openFacebook}
             />
           </div>
-          <div className="social-media__icon">
+          <div
+            className="social-media__icon"
+            aria-label="Clique para abrir minha página do Github"
+            tabIndex="0"
+          >
             <FontAwesomeIcon icon={faGithub} size="lg" onClick={openGitHub} />
           </div>
-          <div className="social-media__icon">
+          <div
+            className="social-media__icon"
+            aria-label="Clique para abrir minha página do LinkedIn"
+            tabIndex="0"
+          >
             <FontAwesomeIcon
               icon={faLinkedin}
               size="lg"
@@ -82,7 +102,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

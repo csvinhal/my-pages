@@ -14,7 +14,7 @@ const TimelineItem = props => {
       <div
         className={`timeline-item__content timeline-item__content--${color}`}
       >
-        <div className="timeline-item__container">
+        <div className="timeline-item__container" tabIndex="0">
           <h6 className="timeline-item__title">{title}</h6>
           <div className="timeline-item__sub-title">{subTitle}</div>
           <div className="timeline-item__period">{period}</div>

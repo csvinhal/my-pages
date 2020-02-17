@@ -14,11 +14,11 @@ import "./Skill.scss";
 
 const Skill = () => {
   return (
-    <div className="skill">
-      <Title title="Skills" />
+    <section className="skill" aria-labelledby="skill__title">
+      <Title id="skill__title" title="Skills" />
       <Card>
-        <CardContainer className="skill__container">
-          <div className="container__technology">
+        <CardContainer className="skill__container" role="list">
+          <div className="container__technology" role="listitem" tabIndex="0">
             <div className="technology__svg">
               <AngularSVG width={50} height={50} />
             </div>
@@ -27,7 +27,7 @@ const Skill = () => {
             </div>
           </div>
 
-          <div className="container__technology">
+          <div className="container__technology" role="listitem" tabIndex="0">
             <div className="technology__svg">
               <ReactJSSVG width={50} height={50} />
             </div>
@@ -36,7 +36,7 @@ const Skill = () => {
             </div>
           </div>
 
-          <div className="container__technology">
+          <div className="container__technology" role="listitem" tabIndex="0">
             <div className="technology__svg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const Skill = () => {
             </div>
           </div>
 
-          <div className="container__technology">
+          <div className="container__technology" role="listitem" tabIndex="0">
             <div className="technology__svg">
               <NodeJSSVG width={50} height={50} />
             </div>
@@ -65,7 +65,7 @@ const Skill = () => {
             </div>
           </div>
 
-          <div className="container__technology">
+          <div className="container__technology" role="listitem" tabIndex="0">
             <div className="technology__svg">
               <HTML5SVG width={50} height={50} />
             </div>
@@ -74,7 +74,7 @@ const Skill = () => {
             </div>
           </div>
 
-          <div className="container__technology">
+          <div className="container__technology" role="listitem" tabIndex="0">
             <div className="technology__svg">
               <CSS3SVG width={50} height={50} />
             </div>
@@ -82,13 +82,13 @@ const Skill = () => {
               CSS3
             </div>
           </div>
-          <div className="container__technology">
+          <div className="container__technology" role="listitem" tabIndex="0">
             <div className="technology__svg">
               <ES6SVG width={50} height={50} />
             </div>
             <div className="technology__label technology__label--es6">ES6</div>
           </div>
-          <div className="container__technology">
+          <div className="container__technology" role="listitem" tabIndex="0">
             <div className="technology__svg">
               <SASSSVG width={50} height={50} />
             </div>
@@ -96,17 +96,15 @@ const Skill = () => {
               SASS
             </div>
           </div>
-          <div className="container__technology">
+          <div className="container__technology" role="listitem" tabIndex="0">
             <div className="technology__img">
               <img src={Git} alt="Git logo" />
             </div>
-            <div className="technology__label technology__label--git">
-              Git
-            </div>
+            <div className="technology__label technology__label--git">Git</div>
           </div>
         </CardContainer>
       </Card>
-    </div>
+    </section>
   );
 };
 
