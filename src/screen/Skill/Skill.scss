@@ -17,6 +17,16 @@
   height: 100px;
 }
 
+.container__technology:hover {
+  transform: scale(1.5);
+  transition: 300ms ease;
+
+  & .technology__label {
+    text-shadow: 0 3px 8px $black;
+    transition: 300ms ease;
+  }
+}
+
 .technology__svg,
 .technology__img {
   width: 100%;
