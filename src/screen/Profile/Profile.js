@@ -42,7 +42,7 @@ const Profile = () => {
             Cristiano Vinhal
           </h4>
           <h6 className="container__infos--job" tabIndex="0">
-            UI Engineer & Coffe Addict
+            UI Engineer & Coffee Addict
           </h6>
         </div>
         <address className="profile__contact">
